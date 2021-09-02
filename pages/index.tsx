@@ -1,9 +1,8 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+
 
 const Home: NextPage = () => {
-  return <div>hello</div>
+  return <div>hello there</div>
 }
 
 export default Home
