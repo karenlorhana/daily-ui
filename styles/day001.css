@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #9fc7e4;
+  width: 100%;
+  overflow: hidden;
+}
+.title-1 {
+  color: #2a8ed4;
+  position: absolute;
+  font-weight: bolder;
+  font-size: 25px;
+  width: 193px;
+  height: 56px;
+  left: 700px;
+  top: 12.3%;
+}
+
+.title-2 {
+  position: absolute;
+  width: 193px;
+  height: 21px;
+  left: 703px;
+  top: 18%;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #2a8ed4;
+}
+.bolder {
+  font-weight: bolder;
+}
+.title-moon {
+  position: absolute;
+  width: 339px;
+  height: 87px;
+  left: 29px;
+  top: 300px;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 59px;
+
+  color: #2a8ed4;
+}
+.circle-top {
+  background: #2a8ed4;
+  border-radius: 50%;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: -150px;
+  top: -250px;
+}
+
+.circle-bottom {
+  background: #2a8ed4;
+
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  left: -100px;
+  top: 500px;
+  border-radius: 50%;
+}
+
+.circle-right-center {
+  background: #2a8ed4;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  right: -170px;
+  border-radius: 50%;
+  bottom: 40px;
+}
+
+.content {
+  background: #e5bec6;
+  max-width: 100%;
+  width: 1100px;
+  height: 600px;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  border-radius: 2%;
+  position: relative;
+  z-index: 50;
+}
+
+.inside-content {
+  width: 425px;
+  height: 442px;
+  margin-left: 74px;
+  top: 12.3%;
+  position: absolute;
+  background: rgba(227, 117, 119, 0.6);
+  border-radius: 10px;
+}
+
+img {
+  transform: rotate(-180deg);
+}
+
+.user-icon {
+  color: #2a8ed4;
+  position: absolute;
+  left: 600px;
+  top: 188px;
+  right: 93.1%;
+  bottom: 33.33%;
+}
+
+.mail-icon {
+  color: #2a8ed4;
+  position: absolute;
+  left: 600px;
+  top: 230px;
+  right: 93.1%;
+  bottom: 33.33%;
+}
+.passwd-icon {
+  color: #2a8ed4;
+  position: absolute;
+  left: 600px;
+  top:280px;
+  right: 93.1%;
+  bottom: 33.33%;
+}
+.user-name {
+  position: absolute;
+
+  left: 625px;
+  top: 190px;
+  width: 300px;
+  border: 1px solid;
+}
+.user-email {
+  position: absolute;
+
+   left: 625px;
+  top: 240px;
+  width: 300px;
+  border: 1px solid;
+}
+.user-passwd {
+  position: absolute;
+
+    left: 625px;
+  top: 290px;
+  width: 300px;
+  border: 1px solid;
+}
+::placeholder {
+  color: #2a8ed4;
+}
+input[type='text'] {
+  width: 380px;
+  color: #2a8ed4;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #2a8ed4;
+  outline: 2px solid transparent;
+}
+input[type='email'] {
+  width: 380px;
+  color: #2a8ed4;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #2a8ed4;
+  outline: 2px solid transparent;
+}
+input[type='password'] {
+  width: 380px;
+  color: #2a8ed4;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #2a8ed4;
+  outline: 2px solid transparent;
+}
