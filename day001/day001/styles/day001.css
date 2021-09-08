@@ -47,6 +47,16 @@ body {
 
   color: #2a8ed4;
 }
+
+.social-media-signup {
+  left: 762px;
+  top: 423px;
+  color: #2a8ed4;
+  position: absolute;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
 .circle-top {
   background: #2a8ed4;
   border-radius: 50%;
@@ -119,7 +129,7 @@ img {
   color: #2a8ed4;
   position: absolute;
   left: 600px;
-  top: 230px;
+  top: 235px;
   right: 93.1%;
   bottom: 33.33%;
 }
@@ -127,7 +137,7 @@ img {
   color: #2a8ed4;
   position: absolute;
   left: 600px;
-  top:280px;
+  top: 285px;
   right: 93.1%;
   bottom: 33.33%;
 }
@@ -142,7 +152,7 @@ img {
 .user-email {
   position: absolute;
 
-   left: 625px;
+  left: 625px;
   top: 240px;
   width: 300px;
   border: 1px solid;
@@ -150,7 +160,7 @@ img {
 .user-passwd {
   position: absolute;
 
-    left: 625px;
+  left: 625px;
   top: 290px;
   width: 300px;
   border: 1px solid;
@@ -181,4 +191,66 @@ input[type='password'] {
   border: none;
   border-bottom: 1px solid #2a8ed4;
   outline: 2px solid transparent;
+}
+
+.button {
+  position: absolute;
+  width: 405px;
+  height: 37px;
+  left: 602px;
+  top: 350px;
+
+  filter: drop-shadow(0px 4px 4px rgba(42, 142, 212, 0.25));
+  border: none;
+  border-radius: 5px;
+  background-color: #9fc7e4e5;
+  color: #2a8ed4;
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #bbd5e7e5;
+}
+
+button:hover {
+  background-color: #2a8ed4;
+  transition: all 0.4s;
+}
+
+.hr1 {
+  position: absolute;
+  width: 130px;
+  height: 1px;
+  left: 600px;
+  top: 430px;
+  background: rgba(42, 142, 212, 0.8);
+}
+
+.hr2 {
+  position: absolute;
+  width: 130px;
+  height: 1px;
+  left: 875px;
+  top: 430px;
+  background: rgba(42, 142, 212, 0.8);
+}
+
+.google-icon {
+  position: absolute;
+  left: 710px;
+  top: 460px;
+}
+
+.twitter-icon {
+  position: absolute;
+  left: 785px;
+  top: 460px;
+}
+
+.lkdin-icon {
+  position: absolute;
+  left: 860px;
+  top: 460px;
 }
