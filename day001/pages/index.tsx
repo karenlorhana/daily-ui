@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import bubbles from '../pages/img/bubbles.png'
 import { useRouter } from 'next/router'
@@ -6,13 +7,27 @@ import PermIdentityOutlinedIcon from '@material-ui/icons/PermIdentityOutlined'
 import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined'
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
 
+import { fetchUsername } from '../src/service'
+
 const Day001: NextPage = () => {
   const router = useRouter()
+
+  const [username, setUsername] = useState('')
+
+  useEffect(() => {
+    async function fetchMyAPI() {
+      const { name } = await fetchUsername()
+      setUsername(name)
+    }
+    fetchMyAPI()
+  }, [setUsername])
+
   const handleClick = (e: React.SyntheticEvent) => {
     e.preventDefault()
 
     router.push(`/`)
   }
+
   return (
     <div className='body'>
       <span className='circle-top' />
@@ -42,12 +57,7 @@ const Day001: NextPage = () => {
           </section>
           <section>
             <EmailOutlinedIcon className='mail-icon' />
-            <input
-              className='user-email'
-              type='email'
-              placeholder='Email'
-              id=''
-            />
+            <input className='user-email' type='email' placeholder='Email' />
           </section>
           <section>
             <LockOutlinedIcon className='passwd-icon' />
@@ -55,7 +65,6 @@ const Day001: NextPage = () => {
               className='user-passwd'
               type='password'
               placeholder='Password'
-              id=''
             />
           </section>
 
